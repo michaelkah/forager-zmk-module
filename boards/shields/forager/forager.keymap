@@ -12,6 +12,15 @@
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 #define MEH LS(LC(LALT))
 
+&lt {
+    compatible = "zmk,behavior-hold-tap";
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <150>;
+    hold-trigger-on-release;
+};
+
 / {
     behaviors {
         as: auto_shift {
