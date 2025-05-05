@@ -57,37 +57,37 @@
 
     def {
       bindings = <
-        &kp Q          &kp W         &kp E         &kp R          &kp T                                           &kp Y           &kp U          &kp I         &kp O         &kp P
-        &l_p LCTRL A   &l_p LALT S   &l_p LGUI D   &l_p LSHFT F   &l_p CAPS G                                     &r_p CAPS H     &r_p RSHFT J   &r_p RGUI K   &r_p RALT L   &r_p RCTRL SEMI
-        &kp Z          &kp X         &kp C         &kp V          &kp B                                           &kp N           &kp M          &kp MINUS     &kp LBKT      &kp SQT
+        &kp Q          &kp W         &kp E         &kp R          &kp T                                           &kp Y           &kp U          &kp I         &kp O            &kp P
+        &l_p LGUI A    &l_p LALT S   &l_p LCTRL D  &l_p LSHFT F   &kp G                                           &kp H           &r_p RSHFT J   &r_p RCTRL K  &r_p LALT L      &r_p RGUI SEMI
+        &kp Z          &l_p RALT X   &kp C         &kp V          &kp B                                           &kp N           &kp M          &kp MINUS     &r_p RALT LBKT   &kp SQT
                                                                   &lt NUM BSPC   &lt FUN TAB      &lt FUN ENTER   &lt NUM SPACE
       >;
     };
 
     num {
       bindings = <
-        &none         &kp N7         &kp N8         &kp N9          &kp COMMA                            &none      &none              &none             &none            &none
-        &kp LCTRL     &l_p LALT N4   &l_p LGUI N5   &l_p LSHFT N6   &l_p CAPS DOT                        &kp CAPS   &r_p RSHFT GRAVE   &r_p RGUI EQUAL   &r_p RALT RBKT   &r_p RCTRL BSLH
-        &none         &kp N1         &kp N2         &kp N3          &kp N0                               &none      &kp NUBS           &kp COMMA         &kp DOT          &kp FSLH
-                                                                    &trans         &trans      &trans    &trans
+        &none         &kp N7         &kp N8         &kp N9          &kp COMMA                                  &none      &none              &none              &none            &none
+        &kp LGUI      &l_p LALT N4   &l_p LCTRL N5  &l_p LSHFT N6   &kp DOT                                    &none      &r_p RSHFT GRAVE   &r_p RCTRL EQUAL   &r_p LALT RBKT   &r_p RGUI BSLH
+        &none         &l_p RALT N1   &kp N2         &kp N3          &kp N0                                     &none      &kp NUBS           &kp COMMA          &r_p RALT DOT    &kp FSLH
+                                                                    &trans         &trans         &trans       &trans
       >;
     };
 
     fun {
       bindings = <
-        &kp ESC       &kp F7         &kp F8         &kp F9          &kp F12                              &kp KP_NLCK   &kp HOME          &kp PG_DN        &kp PG_UP      &kp END
-        &kp LCTRL     &l_p LALT F4   &l_p LGUI F5   &l_p LSHFT F6   &l_p CAPS F11                        &kp CAPS      &r_p RSHFT LEFT   &r_p RGUI DOWN   &r_p RALT UP   &r_p RCTRL RIGHT
-        &none         &kp F1         &kp F2         &kp F3          &kp F10                              &kp SLCK      &kp DEL           &kp INS          &kp PSCRN      &kp PAUSE_BREAK
-                                                                    &trans          &trans      &trans   &trans
+        &kp ESC       &kp F7         &kp F8         &kp F9          &kp F12                                    &kp KP_NLCK   &kp HOME          &kp PG_DN         &kp PG_UP         &kp END
+        &kp LGUI      &l_p LALT F4   &l_p LCTRL F5  &l_p LSHFT F6   &kp F11                                    &kp CAPS      &r_p RSHFT LEFT   &r_p RCTRL DOWN   &r_p LALT UP      &r_p RGUI RIGHT
+        &none         &l_p RALT F1   &kp F2         &kp F3          &kp F10                                    &kp SLCK      &kp DEL           &kp INS           &r_p RALT PSCRN   &kp PAUSE_BREAK
+                                                                    &trans          &trans         &trans      &trans
       >;
     };
 
     mod {
       bindings = <
-        &bt BT_SEL 0    &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3    &bt BT_SEL 4                        &none                    &none             &none          &none          &none
-        &kp LCTRL       &kp LALT     &kp LGUI     &kp LSHFT       &kp CAPS                            &kp C_MUTE               &kp C_VOL_DN      &kp C_BRI_DN   &kp C_BRI_UP   &kp C_VOL_UP
-        &bootloader     &bt BT_CLR   &none        &none           &none                               &kp C_PP                 &kp C_PREV        &kp C_NEXT     &none          &bootloader
-                                                                  &trans         &trans      &trans   &trans
+        &bt BT_SEL 0    &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3    &bt BT_SEL 4                              &none                    &none             &none          &none          &none
+        &kp LGUI        &kp LALT     &kp LCTRL    &kp LSHFT       &bt BT_CLR                                &kp C_MUTE               &kp C_VOL_DN      &kp C_BRI_DN   &kp C_BRI_UP   &kp C_VOL_UP
+        &bootloader     &kp RALT     &none        &none           &none                                     &kp C_PP                 &kp C_PREV        &kp C_NEXT     &none          &bootloader
+                                                                  &trans         &trans         &trans      &trans
       >;
     };
   };
